@@ -1,0 +1,156 @@
+.cfs_treeterm .post_list {
+    float: left;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 205px;
+    width: 49%;
+    -webkit-border-radius: 1px 1px 1px 1px;
+    border-radius: 1px 1px 1px 1px;
+}
+
+.cfs_treeterm .post_list.selected_posts
+{
+    float: right;
+}
+
+.cfs_treeterm .post_list div
+{
+    padding: 4px 6px;
+}
+
+.cfs_treeterm .post_list div.lvl-3
+{
+    cursor: pointer;
+}
+
+.cfs_treeterm .post_list.available_posts > div
+{
+    position: relative;
+    padding-right: 3em;
+}
+
+.cfs_treeterm .post_list.available_posts > div:after
+{
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    content: '\f139';
+    font-size: 19px;
+}
+
+.cfs_treeterm .post_list div:last-child
+{
+    border-bottom: none;
+}
+
+.cfs_treeterm .post_list div:hover
+{
+    background: #eee;
+}
+
+.cfs_treeterm .available_posts div.flex.used {
+    display: none;
+}
+
+.cfs_treeterm .selected_posts div {
+    cursor: move;
+}
+
+.cfs_treeterm .selected_posts div span.remove {
+    float: right;
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.cfs_treeterm .filter_posts {
+    margin-bottom: 10px;
+}
+
+.cfs_input .field .cfs_treeterm .cfs_filter_input {
+    width: 220px;
+    margin: 0;
+}
+
+
+.cfs_treeterm .cfs_filter_help {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+
+.cfs_treeterm .cfs_filter_help:before {
+    content: '\f348';
+}
+
+.cfs_treeterm .selected_posts div span.remove, .cfs_treeterm .cfs_filter_help {
+    position: relative;
+}
+
+.cfs_treeterm .selected_posts div span.remove:before,
+.cfs_treeterm .cfs_filter_help:before,
+.cfs_treeterm .post_list.available_posts > div:after {
+    display: block;
+    position: absolute;
+    color: #adadad;
+
+    /* dashicons */
+    font-size: 20px;
+    font-family: dashicons;
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: inherit;
+    vertical-align: top;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -mos-osx-font-smoothing: grayscale;
+}
+
+.cfs_treeterm .selected_posts div span.remove:before {
+    content: '\f335';
+    font-size: 22px;
+    top: -2px;
+}
+
+.cfs_treeterm .post_list div.flex {
+    display: flex;
+    padding: 0;
+}
+
+.cfs_treeterm .post_list div.lvl-1 {
+    width: 20% !important;
+    padding-left: 1em;
+    border-right: none;
+    flex: initial;
+}
+
+.cfs_treeterm .post_list div.lvl-2 {
+    width: 20% !important;
+    padding-left: 1em;
+    flex: initial;
+}
+
+.cfs_treeterm .post_list div.lvl-3 {
+    border: 1px solid #ddd;
+    border-top: none;
+    flex: auto;
+}
+
+.cfs_treeterm .visible {
+    border: 1px solid #ddd;
+    border-right: none;
+    visibility: visible;
+}
+
+.cfs_treeterm .invisible {
+    border: 1px solid #f5f5f5;
+    border-right: none;
+    visibility: hidden;
+}
